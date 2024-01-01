@@ -78,14 +78,14 @@ export function app(): express.Express {
         }
         const params = req.params[0];
         var seo: any = {
-          title: 'fitnesstrainer Tube',
+          title: 'FitnessTrainer Tube',
           description:
-            'Private video consultations with Naturopathic Doctors and Holistic Healers from around the world. Social Discussion on how to heal various ailments.',
+            'Personal Training Online.Online Fitness Courses.',
           image:
             'https://video.fitnesstrainer.tube/assets/banner/HT-banner-default.png',
           site: 'https://video.fitnesstrainer.tube/',
           url: 'https://video.fitnesstrainer.tube' + params,
-          keywords: 'fitnesstrainer Tube',
+          keywords: 'FitnessTrainer Tube',
         };
         if (
           params.indexOf('channel/') > -1
