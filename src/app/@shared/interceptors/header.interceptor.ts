@@ -12,7 +12,7 @@ export class HeaderInterceptor implements HttpInterceptor {
     constructor(private router: Router, private authService: AuthService, private toastService: ToastService) {}
 
     intercept(request: HttpRequest<any>, next: HttpHandler) {
-        const authToken = localStorage.getItem('token');
+        const authToken = localStorage.getItem('auth-token');
         const authRequest = request.clone({
           setHeaders: {
             Authorization: `Bearer ${authToken}`,
